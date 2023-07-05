@@ -3,7 +3,8 @@
     padding: 10px;
     padding-left: 20px;
     position: sticky;
-    background-color: teal;
+    /* background-color:  rgb(184, 105, 71); */
+    background-image: linear-gradient(rgb(6, 127, 146),white);
     text-align: center;
 }
 #list{
@@ -163,7 +164,7 @@ body{
     margin-top: 20px;
 }
 #pic{
-    background-image: url("./pic15.jpg");
+    background-image: url("./pic3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -175,6 +176,11 @@ body{
     font-size: xxx-large;
     border-style: solid;
     position: absolute;
+    background-color: skyblue;
+    padding: 20px;
+    margin-top: 220px;
+    margin-left: 350px;
+    
 }
 #flag-image img{
     width: 60px;

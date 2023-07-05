@@ -37,7 +37,7 @@ async function fetchAllCountries(){
 }
 
 async function fetchCountryById(id){
-    return fetch( `http://localhost:3000/countries/${id}`, {
+    return fetch( `https://json-server-template-xewz.onrender.com/countries/${id}`, {
         headers: {
             "Content-type": "application/json",
         }
@@ -77,21 +77,111 @@ const country = await fetchCountryById(id)
 
 function renderGallery(gallery) {
     console.log(gallery);
-    const galleryNode = document.querySelector("#main-gallery")
+    const galleryNode = document.querySelector("#main-gallery");
     gallery.forEach(url => {
-      const li = document.createElement("li")
-      const image = document.createElement("img")
-      image.src = url
+      const li = document.createElement("li");
+      const image = document.createElement("img");
+      image.src = url;
+  
+      li.appendChild(image);
+      galleryNode.appendChild(li);
+    });
+    handleFormSubmit(event)
+  }
+  async function fetchUsers(){
+    return fetch(`http://localhost:3000/users`, {
+             headers: {
+                 "Content-type": "application/json",
+             }
+     })
+     .then(resp => resp.json())
+     .then(users => users)
+ }
+ 
+  
+  function handleFormSubmit(event) {
+    event.preventDefault(); 
+    const form = document.querySelector("#emails");
+    form.addEventListener("submit", handleFormSubmit);
+     
+    const emailInput = document.querySelector("#email");
+    const email = emailInput.value;
+    
+    console.log("Submitted email:", email);
+    
+    const successMessage = document.createElement("p");
+    successMessage.textContent = "Thank you for signing up!";
+    const messageContainer = document.querySelector("#message");
+    document.body.appendChild(successMessage);
+    
+    
+    emailInput.value = "Your Email";
+  }
+  const formListNode = document.querySelector("#forms");
+const deleteButtonNode = document.querySelector("#delete");
+const postButtonNode = document.querySelector("#post");
 
-      li.appendChild(image)
-      galleryNode.appendChild(li)
+// Event listeners
+formListNode.addEventListener("submit", handleCountrySearch);
+deleteButtonNode.addEventListener("click", handleCountryDelete);
+postButtonNode.addEventListener("click", handleCountryPost);
 
-      
-    }
-        )
-
-
+function handleCountrySearch(e) {
+  e.preventDefault();
+  const countryId = countriesListNode.value;
+  renderCountryListDetail(countryId);
 }
+
+async function handleCountryDelete(e) {
+  e.preventDefault();
+  const countryId = countriesListNode.value;
+  await deleteCountry(countryId);
+  // Refresh the country list after deletion
+  await renderCountriesList();
+}
+
+async function handleCountryPost(e) {
+  e.preventDefault();
+  const countryData = {
+    name: "New Country",
+    Official_language: "Language",
+    currency: "Currency",
+    population: 0,
+    capital_city: "Capital City",
+    car_side: "Car Side",
+    flag: "https://example.com/flag.jpg",
+    capital_city_pic: "https://example.com/capital.jpg",
+    gallery: [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+    ],
+  };
+  await postCountry(countryData);
+  // Refresh the country list after posting
+  await renderCountriesList();
+}
+
+async function deleteCountry(id) {
+  return fetch(`http://localhost:3000/countries/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
+}
+
+async function postCountry(countryData) {
+  return fetch(`http://localhost:3000/countries`, {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(countryData),
+  });
+}
+
+
+  
 
 
 
