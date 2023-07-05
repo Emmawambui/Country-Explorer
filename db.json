@@ -1,0 +1,145 @@
+{
+    "countries": [
+      {
+        "id": "1",
+        "name": "Kenya",
+        "language": [
+            "English",
+            "Kiswahili"
+        ],
+        "currency": "ksh",
+        "population": 40000000,
+        "capital city": "Nairobi",
+        "car side": "Left Hand Side",
+        "flag": "https://cdn.webshopapp.com/shops/94414/files/52385976/flag-of-kenya.jpg",
+        "gallery":[
+           "https://unsplash.com/photos/kjOBqwMUnWw",
+           "https://unsplash.com/photos/dsFrAJUrUuU",
+           "https://unsplash.com/photos/SODYDpEy0Cw",
+           "https://unsplash.com/photos/2G1COvn4lKg",
+           "https://unsplash.com/photos/o4VlOVm6tGM",
+           "https://unsplash.com/photos/EtH1GE9qaDg",
+           "https://unsplash.com/photos/mfX814jtyro",
+           "https://unsplash.com/photos/3QPNiZ_Nqjs",
+           "https://unsplash.com/photos/rSm3wEA2P4o",
+           "https://unsplash.com/photos/l4A5E42LCDw",
+           "https://unsplash.com/photos/IIdBO9jzHNo"
+        ]
+      },
+     {
+        "id": "2",
+        "name": "Uganda",
+        "language": [
+            "English",
+            "Baganda"
+        ],
+        "currency": "Ugx",
+        "population": 45850000,
+        "capital city": "Kampala",
+        "car side": "Left Hand Side",
+        "flag": "https://www.shutterstock.com/image-illustration/render-republic-uganda-flag-perfect-260nw-1938530464.jpg",
+        "gallery":[
+            "https://unsplash.com/photos/-IpPr2khu3o",
+            "https://unsplash.com/photos/sMjVNtvYkD0",
+            "https://unsplash.com/photos/j9kIRsK8jqU",
+            "https://unsplash.com/photos/cYPbGVr3njE",
+            "https://unsplash.com/photos/n9buHOITydY",
+            "https://unsplash.com/photos/cs8Xa4t1hvc",
+            "https://unsplash.com/photos/lii0uaz8Ieo"
+        ]
+      },
+     {
+        "id": "3",
+        "name": "Tanzania",
+        "language": [
+            "English",
+            "kiswahili",
+            "Arabic"
+        ],
+        "currency": "Tsh",
+        "population": 50100000,
+        "capital city": "Dodoma",
+        "car side": "Left Hand Side",
+        "flag":"https://rb.gy/pzkum",
+        "gallery":[
+           "https://unsplash.com/s/photos/tanzania",
+           "https://unsplash.com/photos/B8QoatPKAJg",
+           "https://unsplash.com/photos/lZLgqIiFHSw",
+           "https://unsplash.com/photos/hKTMK12JHvM",
+           "https://unsplash.com/photos/3xJ9AeCwjTQ",
+           "https://unsplash.com/photos/UZalS3t9uPU",
+           "https://unsplash.com/photos/l7OSismNsyM",
+           "https://unsplash.com/photos/fNlQ5Gpq1kM"
+         ]
+     },
+     {
+        "id": "4",
+        "name": "Rwanda",
+        "language": [
+            "Kinyarwanda", 
+            "English",
+            "French"
+        ],
+        "currency": "Rwf",
+        "population": 13460000,
+        "capital city": "Kigali",
+        "car side": "Right Hand Side",
+        "flag": "https://cdn.pixabay.com/photo/2012/04/10/23/18/rwanda-26944_1280.png",
+        "gallery":[
+           "https://unsplash.com/photos/Wtcs0CVXor8",
+           "https://unsplash.com/photos/bVMnhNOfFCo",
+           "https://unsplash.com/photos/riqHVFDBt-8",
+           "https://unsplash.com/photos/ggtFONGaWTo",
+           "https://unsplash.com/photos/Ymvodp-2JuE",
+           "https://unsplash.com/photos/pJGA1LYp_lc",
+           "https://unsplash.com/photos/M4L0MgfncCY"
+        ]
+     },
+     {
+        "id": "5",
+        "name": "South Africa",
+        "language": [
+            "English", 
+            "Afrikaans",
+            "Swati" 
+        ],
+        "currency": "Rand",
+        "populoation": 8000000000,
+        "capital city": "Cape Town",
+        "car side": "Left Hand",
+        "flag": "https://img.freepik.com/premium-photo/flag-south-africa_406939-4584.jpg",
+        "gallery":[
+           "https://unsplash.com/photos/RAAXmcYdoIg",
+           "https://unsplash.com/photos/YYWro5qSxAU",
+           "https://unsplash.com/photos/0Us8EncrE2E",
+           "https://unsplash.com/photos/kpdWINVf3JI",
+           "https://unsplash.com/photos/zZQz_RZxJCE",
+           "https://unsplash.com/photos/jtKoHDO-ihg",
+           "https://unsplash.com/photos/eH63NkYWRTI"
+        ]
+     },
+     {
+        "id": "6",
+        "name": "Morocco",
+        "language": [
+            "Arabic",
+            "Berber" 
+        ],
+        "currency": "Dirham",
+        "population": 37697009,
+        "capital city": "Rabat",
+        "car side": "Right Hand",
+        "flag": "https://cdn.countryflags.com/thumbs/morocco/flag-400.png",
+        "gallery":[
+           "https://unsplash.com/photos/NncAbldgViA",
+           "https://unsplash.com/photos/VqouWpsuziE",
+           "https://unsplash.com/photos/TYHyrF56Gys",
+           "https://unsplash.com/photos/knB5iCogf5Q",
+           "https://unsplash.com/photos/GETgyoy7BZA",
+           "https://unsplash.com/photos/NaY693XXXpY",
+           "https://unsplash.com/photos/6O8L1xeCK_w"
+        ]
+     }
+
+    ]
+  }
