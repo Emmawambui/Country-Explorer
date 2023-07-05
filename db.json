@@ -9,10 +9,10 @@
         ],
         "currency": "ksh",
         "population": 40000000,
-        "capital city": "Nairobi",
-        "car side": "Left Hand Side",
+        "capital_city": "Nairobi",
+        "car_side": "Left Hand Side",
         "flag": "https://cdn.webshopapp.com/shops/94414/files/52385976/flag-of-kenya.jpg",
-        "capitalCity": "https://rb.gy/odlks",
+        "capital_city_pic": "https://rb.gy/odlks",
         "gallery":[
            "https://unsplash.com/photos/kjOBqwMUnWw",
            "https://unsplash.com/photos/dsFrAJUrUuU",
@@ -36,10 +36,10 @@
         ],
         "currency": "Ugx",
         "population": 45850000,
-        "capital city": "Kampala",
-        "car side": "Left Hand Side",
+        "capital_city": "Kampala",
+        "car_side": "Left Hand Side",
         "flag": "https://www.shutterstock.com/image-illustration/render-republic-uganda-flag-perfect-260nw-1938530464.jpg",
-        "capitalCity": "https://rb.gy/grf96",
+        "capital_city_pic": "https://rb.gy/grf96",
         "gallery":[
             "https://unsplash.com/photos/-IpPr2khu3o",
             "https://unsplash.com/photos/sMjVNtvYkD0",
@@ -60,10 +60,10 @@
         ],
         "currency": "Tsh",
         "population": 50100000,
-        "capital city": "Dodoma",
-        "car side": "Left Hand Side",
+        "capital_city": "Dodoma",
+        "car_side": "Left Hand Side",
         "flag":"https://rb.gy/pzkum",
-        "capitalCity": "https://rb.gy/q0kbn",
+        "capital_city_pic": "https://rb.gy/q0kbn",
         "gallery":[
            "https://unsplash.com/s/photos/tanzania",
            "https://unsplash.com/photos/B8QoatPKAJg",
@@ -85,10 +85,10 @@
         ],
         "currency": "Rwf",
         "population": 13460000,
-        "capital city": "Kigali",
-        "car side": "Right Hand Side",
+        "capital_city": "Kigali",
+        "car_side": "Right Hand Side",
         "flag": "https://cdn.pixabay.com/photo/2012/04/10/23/18/rwanda-26944_1280.png",
-        "capitalCity": "https://rb.gy/yk6e2",
+        "capital_city_pic": "https://rb.gy/yk6e2",
         "gallery":[
            "https://unsplash.com/photos/Wtcs0CVXor8",
            "https://unsplash.com/photos/bVMnhNOfFCo",
@@ -109,10 +109,10 @@
         ],
         "currency": "Rand",
         "populoation": 8000000000,
-        "capital city": "Cape Town",
-        "car side": "Left Hand",
+        "capital_city": "Cape Town",
+        "car_side": "Left Hand",
         "flag": "https://img.freepik.com/premium-photo/flag-south-africa_406939-4584.jpg",
-        "capitalCity": "https://rb.gy/1vtbg",
+        "capital_city_pic": "https://rb.gy/1vtbg",
         "gallery":[
            "https://unsplash.com/photos/RAAXmcYdoIg",
            "https://unsplash.com/photos/YYWro5qSxAU",
@@ -132,10 +132,10 @@
         ],
         "currency": "Dirham",
         "population": 37697009,
-        "capital city": "Rabat",
-        "car side": "Right Hand",
+        "capital_city": "Rabat",
+        "car_side": "Right Hand",
         "flag": "https://cdn.countryflags.com/thumbs/morocco/flag-400.png",
-        "capitalCity": "https://rb.gy/8vfgl",
+        "capital_city_pic": "https://rb.gy/8vfgl",
         "gallery":[
            "https://unsplash.com/photos/NncAbldgViA",
            "https://unsplash.com/photos/VqouWpsuziE",
@@ -147,5 +147,16 @@
         ]
      }
 
+    ],
+    "users":[
+        {
+            "id": 1,
+            "email": "you@test.com"
+        },
+        {
+            "id": 2,
+            "email": "me@test.com"
+        }
     ]
+
   }
