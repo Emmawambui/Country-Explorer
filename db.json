@@ -3,10 +3,7 @@
       {
         "id": "1",
         "name": "Kenya",
-        "language": [
-            "English",
-            "Kiswahili"
-        ],
+        "Official_language":  "English",
         "currency": "ksh",
         "population": 40000000,
         "capital_city": "Nairobi",
@@ -30,10 +27,7 @@
      {
         "id": "2",
         "name": "Uganda",
-        "language": [
-            "English",
-            "Baganda"
-        ],
+        "Official_language": "English",
         "currency": "Ugx",
         "population": 45850000,
         "capital_city": "Kampala",
@@ -53,11 +47,7 @@
      {
         "id": "3",
         "name": "Tanzania",
-        "language": [
-            "English",
-            "kiswahili",
-            "Arabic"
-        ],
+        "Official_language": "kiswahili",
         "currency": "Tsh",
         "population": 50100000,
         "capital_city": "Dodoma",
@@ -78,11 +68,7 @@
      {
         "id": "4",
         "name": "Rwanda",
-        "language": [
-            "Kinyarwanda", 
-            "English",
-            "French"
-        ],
+        "Official_language": "Kinyarwanda", 
         "currency": "Rwf",
         "population": 13460000,
         "capital_city": "Kigali",
@@ -102,11 +88,7 @@
      {
         "id": "5",
         "name": "South Africa",
-        "language": [
-            "English", 
-            "Afrikaans",
-            "Swati" 
-        ],
+        "Official_language": "English", 
         "currency": "Rand",
         "populoation": 8000000000,
         "capital_city": "Cape Town",
@@ -126,10 +108,7 @@
      {
         "id": "6",
         "name": "Morocco",
-        "language": [
-            "Arabic",
-            "Berber" 
-        ],
+        "Official_language": "Arabic",
         "currency": "Dirham",
         "population": 37697009,
         "capital_city": "Rabat",
