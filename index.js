@@ -27,7 +27,7 @@ async function renderCountriesList(){
 }
 
 async function fetchAllCountries(){
-   return fetch(`http://localhost:3000/countries`, {
+   return fetch(`http://https://json-server-template-xewz.onrender.com/countries`, {
             headers: {
                 "Content-type": "application/json",
             }
@@ -89,7 +89,7 @@ function renderGallery(gallery) {
     handleFormSubmit(event)
   }
   async function fetchUsers(){
-    return fetch(`http://localhost:3000/users`, {
+    return fetch(`https://json-server-template-xewz.onrender.com/users`, {
              headers: {
                  "Content-type": "application/json",
              }
@@ -117,14 +117,14 @@ function renderGallery(gallery) {
     
     emailInput.value = "Your Email";
   }
-  const formListNode = document.querySelector("#forms");
+ 
 const deleteButtonNode = document.querySelector("#delete");
 const postButtonNode = document.querySelector("#post");
 
 // Event listeners
-formListNode.addEventListener("submit", handleCountrySearch);
-deleteButtonNode.addEventListener("click", handleCountryDelete);
-postButtonNode.addEventListener("click", handleCountryPost);
+// formListNode.addEventListener("submit", handleCountrySearch);
+// deleteButtonNode.addEventListener("click", handleCountryDelete);
+// postButtonNode.addEventListener("click", handleCountryPost);
 
 function handleCountrySearch(e) {
   e.preventDefault();
@@ -162,7 +162,7 @@ async function handleCountryPost(e) {
 }
 
 async function deleteCountry(id) {
-  return fetch(`http://localhost:3000/countries/${id}`, {
+  return fetch(`http://https://json-server-template-xewz.onrender.com/countries/${id}`, {
     method: "DELETE",
     headers: {
       "Content-type": "application/json",
@@ -171,7 +171,7 @@ async function deleteCountry(id) {
 }
 
 async function postCountry(countryData) {
-  return fetch(`http://localhost:3000/countries`, {
+  return fetch(`https://json-server-template-xewz.onrender.com/countries`, {
     method: "POST",
     headers: {
       "Content-type": "application/json",

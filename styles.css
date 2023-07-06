@@ -186,3 +186,11 @@ body{
     width: 60px;
     height: 40px;
 }
+button{
+    background-color: teal;
+    color: black;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100px;
+    font-size: large;
+}
