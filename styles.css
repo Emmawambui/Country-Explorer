@@ -30,14 +30,18 @@ h2,h3{
     text-decoration: underline;
     text-align: center;
 }
-form{
+ #form{
     text-align: center;
-}
+ }
+   
 /* #home{
+    text-align: ;
 }  */
 #search-bar{
     text-align: center;
+    
 }
+
 #display{
     display: flex;
     gap: 100px;
@@ -104,7 +108,7 @@ form{
     background-color: rgb(24, 24, 114);
     color: rgb(38, 142, 142);
 }
- input[list="country"]{
+ /* input[list="country"]{
     width: 300px;
     height: 30px;
     border-style: solid;
@@ -112,7 +116,7 @@ form{
     border-color: rgb(24, 24, 114) ;
     margin-top: 20px;
    
-}
+} */
 #gallery{
     margin-top: 100px;
     list-style: none;
@@ -203,4 +207,20 @@ button{
     padding: 10px;
     width: 100px;
     font-size: large;
+}
+/* #countries{
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(24, 24, 114) ;
+    margin-top: 20px;
+} */
+select{
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(24, 24, 114) ;
+    margin-top: 20px;
 }

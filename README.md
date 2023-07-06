@@ -5,7 +5,7 @@
 
 ## Description
 
-Country Explorer is a a website that provides a way to create, update, delete and retrieve country's data from one source.  It also provides a way to create and retrieve a country's general information,a picture of its capital city and its major tourist destinations plus the gallery.
+Country Explorer is a a website that provides a way to retrieve country's data from one source.  It also provides a way to create and retrieve a country's general information,a picture of its capital city and its major tourist destinations plus the gallery.
 
 ## Setup Requirements
 
@@ -13,24 +13,11 @@ Country Explorer is a a website that provides a way to create, update, delete an
 - Web-browser or your choice
 - Github
 - Vs code
-- Node.js (https://nodejs.org/)
 -Terminal
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to ` https://json-server-template-xewz.onrender.com/countries `. The app will automatically reload if you change any of the source files.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Technologies Used
 
@@ -41,10 +28,7 @@ The following have been used on this project:
 - db.JSON
 - Javascript
 
-
-
-
-#### Live link to view the project <a href="https://jobs-portal-frontend.netlify.app/">View Jobs Portal</a>
+#### Live link to view the project <a href="https://main--lucky-fox-895186.netlify.app/">View Jobs Portal</a>
 
 ## Known Bugs
 

@@ -38,7 +38,7 @@ async function fetchAllCountries(){
 }
 
 async function fetchCountryById(id){
-    return fetch( `http://localhost:3000/countries/${id}`, {
+    return fetch( `https://json-server-template-xewz.onrender.com/countries/${id}`, {
         headers: {
             "Content-type": "application/json",
         }
@@ -90,7 +90,7 @@ function renderGallery(gallery) {
     // handleFormSubmit(event)
   }
   async function fetchUsers(){
-    return fetch(`http://localhost:3000/users`, {
+    return fetch(`https://json-server-template-xewz.onrender.com/users`, {
              headers: {
                  "Content-type": "application/json",
              }
@@ -114,29 +114,26 @@ function renderGallery(gallery) {
      emailInput.value = "Your Email";
  }
  
-const deleteButtonNode = document.querySelector("#delete");
-function handleCountrySearch(e) {
-  e.preventDefault();
-  const countryId = countriesListNode.value;
-  renderCountryListDetail(countryId);
-}
-
-async function handleCountryDelete(e) {
-  e.preventDefault();
-  const countryId = countriesListNode.value;
-  await deleteCountry(countryId);
-  // Refresh the country list after deletion
-  await renderCountriesList();
-}
-
-async function deleteCountry(id) {
-  return fetch(`http://https://json-server-template-xewz.onrender.com/countries/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-type": "application/json",
-    },
-  });
-}
+ const deleteButtonNode = document.querySelector("#delete");
+ deleteButtonNode.addEventListener("click", handleCountryDelete);
+ 
+ async function handleCountryDelete(e) {
+   e.preventDefault();
+   const countryId = countriesListNode.value;
+   await deleteCountry(countryId);
+   // Refresh the country list after deletion
+   await renderCountriesList();
+ }
+ 
+ async function deleteCountry(id) {
+   return fetch(`https://json-server-template-xewz.onrender.com/countries/${id}`, {
+     method: "DELETE",
+     headers: {
+       "Content-type": "application/json",
+     },
+   });
+ }
+ 
 
 
 
