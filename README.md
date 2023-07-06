@@ -2,30 +2,23 @@
 
 #### Created By Emma Wambui on 05-07-2023
 
-## Design Link
-
-[Figma](https://www.figma.com/file/UF3jKVnX4320r7r2V7P6pI/Jobs-Portal?node-id=56%3A133)
 
 ## Description
 
-Country Explorer is a a website that provides a way to create, update, delete and retrieve country's data from one source.  It also provides a way to create and retrieve a country and its major tourist destinations plus the gallery.
+Country Explorer is a a website that provides a way to create, update, delete and retrieve country's data from one source.  It also provides a way to create and retrieve a country's general information,a picture of its capital city and its major tourist destinations plus the gallery.
 
 ## Setup Requirements
 
 - Git
 - Web-browser or your choice
 - Github
-- Angular CLI (https://cli.angular.io/)
+- Vs code
 - Node.js (https://nodejs.org/)
-- NPM (https://www.npmjs.com/)
+-Terminal
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `  http://localhost:3000/countries`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` for a dev server. Navigate to ` https://json-server-template-xewz.onrender.com/countries `. The app will automatically reload if you change any of the source files.
 
 ## Build
 
@@ -52,34 +45,6 @@ The following have been used on this project:
 
 
 #### Live link to view the project <a href="https://jobs-portal-frontend.netlify.app/">View Jobs Portal</a>
-
-
-
-## Screenshots Of the Figma Design
-
-- Homepage
-
-  <img src="./screenshots/Homepage.png" alt="screenshot" />
-
-- Job Details
-
-  <img src="./screenshots/Job Details.png" alt="screenshot" />
-
-- Create Job Form Page
-
-  <img src="./screenshots/Create Job Page.png" alt="screenshot" />
-
-- Jobs List
-
-  <img src="./screenshots/Jobs List.png" alt="screenshot" />
-
-- Login Page
-
-  <img src="./screenshots/Login.png" alt="screenshot" />
-
-- Register Page
-
-  <img src="./screenshots/Register.png" alt="screenshot" />
 
 ## Known Bugs
 

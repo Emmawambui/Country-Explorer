@@ -68,10 +68,15 @@ form{
 }
 #main-gallery{
     display: flex;
+    flex-wrap: wrap;
     /* width: 20px;
     height: 20px; */
     margin-top: 20px ;
     list-style: none;
+}
+#main-gallery li img{
+    width:300px;
+    height:300px;
 }
 #footer{
     display: flex;
@@ -111,6 +116,7 @@ form{
 #gallery{
     margin-top: 100px;
     list-style: none;
+
 }
 #home{
     /* background-image: url(pic3.jpg);  */
@@ -174,9 +180,12 @@ body{
 }
 #word{
     font-size: xxx-large;
+    font-weight: 700px;
     border-style: solid;
+    border-color: black;
     position: absolute;
-    background-color: skyblue;
+    background-color: rgb(93, 99, 101);
+    color: white;
     padding: 20px;
     margin-top: 220px;
     margin-left: 350px;

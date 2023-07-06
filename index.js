@@ -15,6 +15,7 @@ function handleCountrySearch(e){
 
 async function renderCountriesList(){
     const countries = await fetchAllCountries()
+    
     countries.forEach(country => {
         const option = document.createElement("option")
         option.value = country.id
@@ -27,7 +28,7 @@ async function renderCountriesList(){
 }
 
 async function fetchAllCountries(){
-   return fetch(`http://https://json-server-template-xewz.onrender.com/countries`, {
+   return fetch(`https://json-server-template-xewz.onrender.com/countries`, {
             headers: {
                 "Content-type": "application/json",
             }
@@ -37,7 +38,7 @@ async function fetchAllCountries(){
 }
 
 async function fetchCountryById(id){
-    return fetch( `https://json-server-template-xewz.onrender.com/countries/${id}`, {
+    return fetch( `http://localhost:3000/countries/${id}`, {
         headers: {
             "Content-type": "application/json",
         }
@@ -76,20 +77,20 @@ const country = await fetchCountryById(id)
 }
 
 function renderGallery(gallery) {
-    console.log(gallery);
+  
     const galleryNode = document.querySelector("#main-gallery");
     gallery.forEach(url => {
       const li = document.createElement("li");
       const image = document.createElement("img");
       image.src = url;
-  
+      
       li.appendChild(image);
       galleryNode.appendChild(li);
     });
-    handleFormSubmit(event)
+    // handleFormSubmit(event)
   }
   async function fetchUsers(){
-    return fetch(`https://json-server-template-xewz.onrender.com/users`, {
+    return fetch(`http://localhost:3000/users`, {
              headers: {
                  "Content-type": "application/json",
              }
@@ -97,35 +98,23 @@ function renderGallery(gallery) {
      .then(resp => resp.json())
      .then(users => users)
  }
- 
+ const signUpForm = document.querySelector("#emails");
+ signUpForm.addEventListener("submit", handleFormSubmit)
   
   function handleFormSubmit(event) {
     event.preventDefault(); 
-    const form = document.querySelector("#emails");
-    form.addEventListener("submit", handleFormSubmit);
-     
+    
+    // form.addEventListener("submit", handleFormSubmit);
+     console.log(event.target);
     const emailInput = document.querySelector("#email");
     const email = emailInput.value;
+
+    alert("Thank you for signing up!");
     
-    console.log("Submitted email:", email);
-    
-    const successMessage = document.createElement("p");
-    successMessage.textContent = "Thank you for signing up!";
-    const messageContainer = document.querySelector("#message");
-    document.body.appendChild(successMessage);
-    
-    
-    emailInput.value = "Your Email";
-  }
+     emailInput.value = "Your Email";
+ }
  
 const deleteButtonNode = document.querySelector("#delete");
-const postButtonNode = document.querySelector("#post");
-
-// Event listeners
-// formListNode.addEventListener("submit", handleCountrySearch);
-// deleteButtonNode.addEventListener("click", handleCountryDelete);
-// postButtonNode.addEventListener("click", handleCountryPost);
-
 function handleCountrySearch(e) {
   e.preventDefault();
   const countryId = countriesListNode.value;
@@ -140,27 +129,6 @@ async function handleCountryDelete(e) {
   await renderCountriesList();
 }
 
-async function handleCountryPost(e) {
-  e.preventDefault();
-  const countryData = {
-    name: "New Country",
-    Official_language: "Language",
-    currency: "Currency",
-    population: 0,
-    capital_city: "Capital City",
-    car_side: "Car Side",
-    flag: "https://example.com/flag.jpg",
-    capital_city_pic: "https://example.com/capital.jpg",
-    gallery: [
-      "https://example.com/image1.jpg",
-      "https://example.com/image2.jpg",
-    ],
-  };
-  await postCountry(countryData);
-  // Refresh the country list after posting
-  await renderCountriesList();
-}
-
 async function deleteCountry(id) {
   return fetch(`http://https://json-server-template-xewz.onrender.com/countries/${id}`, {
     method: "DELETE",
@@ -169,28 +137,6 @@ async function deleteCountry(id) {
     },
   });
 }
-
-async function postCountry(countryData) {
-  return fetch(`https://json-server-template-xewz.onrender.com/countries`, {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json",
-    },
-    body: JSON.stringify(countryData),
-  });
-}
-
-
-  
-
-
-
-
-
-
-
-
-
 
 
 
