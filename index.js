@@ -75,10 +75,15 @@ const country = await fetchCountryById(id)
         
         renderGallery(country.gallery)
 }
-
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+};
 function renderGallery(gallery) {
   
     const galleryNode = document.querySelector("#main-gallery");
+    removeAllChildNodes(galleryNode)
     gallery.forEach(url => {
       const li = document.createElement("li");
       const image = document.createElement("img");
